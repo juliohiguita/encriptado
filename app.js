@@ -21,11 +21,11 @@ const ocultarElementos = () => {
 const encriptar = () => {
   let texto = areaEncriptar.value;
   texto = texto
-    .replaceAll(/e/gi, "enter")
-    .replaceAll(/i/gi, "imes")
-    .replaceAll(/o/gi, "ober")
-    .replaceAll(/a/gi, "ai")
-    .replaceAll(/u/gi, "ufat");
+    .replaceAll(/e/, "enter")
+    .replaceAll(/i/, "imes")
+    .replaceAll(/o/, "ober")
+    .replaceAll(/a/, "ai")
+    .replaceAll(/u/, "ufat");
   textEncriptado.value = texto;
   areaEncriptar.value = "";
 };
@@ -34,11 +34,11 @@ const encriptar = () => {
 const desenCriptar = () => {
   let texto = areaEncriptar.value;
   texto = texto
-    .replaceAll(/enter/gi, "e")
-    .replaceAll(/imes/gi, "i")
-    .replaceAll(/ober/gi, "o")
-    .replaceAll(/ai/gi, "a")
-    .replaceAll(/ufat/gi, "u");
+    .replaceAll(/enter/, "e")
+    .replaceAll(/imes/, "i")
+    .replaceAll(/ober/, "o")
+    .replaceAll(/ai/, "a")
+    .replaceAll(/ufat/, "u");
   textEncriptado.value = texto;
   areaEncriptar.value = "";
 };
